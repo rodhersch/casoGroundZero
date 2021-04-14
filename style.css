@@ -40,7 +40,7 @@
   }
   
   .hijo {
-    background: rgb(255, 255, 255);
+    background-color: white;
     width: 360px;
     padding: 48px 40px 36px;
     position: absolute;
@@ -49,7 +49,8 @@
     border-style:outset;
   }
   .cabeza{
-    background: rgb(255, 254, 254);
+    
+    background-color: white;
     width: 400px;
     height: 500px;
     position: absolute;
