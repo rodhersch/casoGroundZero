@@ -1,3 +1,4 @@
+
 .container img{
     max-width: 45px;
     min-width: 40px;
@@ -24,3 +25,49 @@
 .img_inicio{height: 2000px;
 
 }
+
+.padre {
+    background: rgb(255, 255, 255);
+    height:1000px;
+
+  
+    display: flex;
+
+    justify-content: center;
+    /* justify-content: center; centraliza contenido */
+    align-items: center;
+    /* align-items: center; centraliza contenido respecto al contenedor */
+  }
+  
+  .hijo {
+    background: rgb(255, 255, 255);
+    width: 360px;
+    padding: 48px 40px 36px;
+    position: absolute;
+    border-radius: 20PX;
+    border-width: 1px;
+    border-style:outset;
+  }
+  .cabeza{
+    background: rgb(255, 254, 254);
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    border-width: 1px;
+    border-style:outset;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20PX;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+
+
+  }
+  .img-portada{
+    height:60px;
+    padding: 2px;
+    
+    
+    
+
+  }
