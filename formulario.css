@@ -16,3 +16,36 @@ background-size: cover;
     padding: 0 18px;
     box-shadow: 0 0 3px #848484;
 }
+
+
+
+/*subir imagen */
+.user-img{
+    margin-top: -60px;
+    margin-bottom: 30px;
+    
+   
+}
+
+/*darle un border-radiuos a la img*/
+.user-img img{
+ border-radius:100%;
+ max-width: 45%;
+ min-width: 45%;
+  margin-left: 65px;
+}
+
+
+.form-group input{
+    text-align: center;
+}
+
+/*centrar button*/
+.btn{
+   margin-bottom: 10px;
+   margin-left: 54px;
+   padding: 7px;
+   border-radius: 5px;
+   border-bottom: 4px solid #219882;
+}
+
