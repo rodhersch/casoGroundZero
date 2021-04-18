@@ -31,8 +31,8 @@
                         <fieldset>
                             <legend class="text-left header">Registrate</legend>
 
-                            <div class="form-group"> <!-- contraseña -->
-                                <label for="name">Ingrese su nombre:</label>
+                            <div class="form-group"> <!-- nombre-->
+                            <label for="name">Ingrese su nombre completo:</label>
                                 <input type="text" class="form-control form-control-sm" id="nombre2" name="nombre2">
                               </div> 
 
@@ -42,9 +42,25 @@
                                 <input type="text" class="form-control" id="street1_id" name="street1" placeholder="Nombre de usuario@gmail.com">
                             </div> 
                          
+                            <!--contraseña-->
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">contraseña</label>
+                                <input type="password" class="form-control" id="password" placeholder="contraseña">
+                            
+                            <br>
+                                <div class="form-group">
+                                <label for="mob">Numero Celular</label>
+                                <input type="text" class="form-control" id="mob" name="data[mob]" placeholder="Numero Celular">
+                                </div>   
+                                
 
-                              
     
+                            <!--registrar-->
+                                <br>
+
+                            <div class="form-group"> <!-- Submit Button -->
+                                <button type="submit" class="btn btn-primary">Registrar</button>
+                            </div> 
 
                         </fieldset>
                     </form>
