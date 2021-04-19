@@ -57,7 +57,7 @@
     border-width: 1px;
     border-style:outset;
     text-align: center;
-    padding: 5px;
+    padding: 30px;
     border-radius: 20PX;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style:oblique;
@@ -70,5 +70,11 @@
     
     
     
+
+  }
+
+  .span_artista{
+    text-align: center;
+    background-color: tomato;
 
   }

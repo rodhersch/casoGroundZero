@@ -9,3 +9,20 @@
     height: 100%;
 
 }
+
+.artista_titulo{
+  width: 100%;
+  text-align: center;
+
+}
+.article-header{
+  text-align: center;
+}
+.especificacion{
+  margin-top: 50px;
+
+}
+.descripcion{
+  margin-top: 50px;
+
+}
