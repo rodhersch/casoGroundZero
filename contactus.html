@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="style_contactus.css">
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contáctanos</h2>
+    <p>Cuéntanos qué podemos hacer por ti</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="img/imagen1.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Nombre</label>
+        <input type="text" id="fname" name="firstname">
+        <label for="lname">Apellido</label>
+        <input type="text" id="lname" name="lastname">
+        <label for="femail">Correo electrónico</label>
+        <input type="text" id="femail" name="email">
+        <label for="comuna">Comuna</label>
+        <select id="comuna" name="comuna">
+          <option value="santiago_centro">Santiago Centro</option>
+          <option value="maipu">Maipú</option>
+          <option value="pedro_aguirre_cerda">Pedro Aguirre Cerda</option>
+          <option value="nunoa">Ñuñoa</option>
+          <option value="puente_alto">Puente Alto</option>
+          <option value="la_florida">La Florida</option>
+          <option value="macul">Macul</option>
+          <option value="cerrillos">Cerrillos</option>
+          <option value="la_pintana">La Pintana</option>
+          <option value="las_condes">Las Condes</option>
+          <option value="penalolen">Peñalolén</option>
+          <option value="vitacura">Vitacura</option>
+        </select>
+        <label for="asunto">Asunto</label>
+        <textarea id="asunto" name="asunto" placeholder="Cuéntanos..." style="height:170px"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+</div>
