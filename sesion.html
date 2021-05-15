@@ -21,29 +21,20 @@
       <img src="arte.jpg" class="img_fondo" alt="fondo" />
       <div class="cabeza">Inicia Sesion Con Nosotros</div>
       <div class="hijo">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Correo electronico</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            />
-            <div id="emailHelp" class="form-text"></div>
+        <form class="form-horizontal" id="signupForm">
+          <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input type="text" id="email" name="email" class="form-control">
+            </div>
+        </div>
+       
+        <div class="form-group">
+          <label for="password" class="col-sm-2 control-label">Password</label>
+          <div class="col-sm-10">
+              <input type="text" id="password" name="password" class="form-control">
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Contraseña</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div>
+      </div>
           <div class="mb-3 form-check">
             <input
               type="checkbox"
@@ -54,10 +45,17 @@
               >Check me out</label
             >
           </div>
-          <a class="btn btn-primary" href="index.html" role="button">entrar</a>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <input type="submit" class="btn btn-primary" value="Submit" href="index.html"/>
+            </div>
+        </div>
+      
         </form>
       </div>
     </div>
+
+
 
     <footer>
       <div></div>
@@ -78,5 +76,7 @@
       integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+    <script src="validacion.js"></script>
   </body>
 </html>

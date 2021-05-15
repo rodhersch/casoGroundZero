@@ -1,7 +1,9 @@
 $.validator.setDefaults( {
     submitHandler: function () {
-       alert( "submitted!" );
+       alert( "Exitoso!" );
+       onclick=location.href='index.html';
     }
+    
  });
  
  
@@ -15,14 +17,12 @@ $.validator.setDefaults( {
           comments: {
              required: true
           },
-          password: {
+          
+          
+          lname: {
              required: true,
              minlength: 5
-          },
-          confirm_password: {
-             required: true,
-             minlength: 5,
-             equalTo: "#password"
+             
           },
           email: {
              required: true,
@@ -33,7 +33,7 @@ $.validator.setDefaults( {
        messages: {   //mensajes de error, envio sin datos        
           fullname: {
              required: "Por favor ingresa tu nombre completo",
-             minlength: "Tu nombre debe ser de no menos de 5 caracteres"
+             minlength: "Tu nombre debe ser de no menos de 5 caracteres",
           },
           comments: "Por favor ingresa un comentario",
           password: {
