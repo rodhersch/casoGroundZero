@@ -1,0 +1,13 @@
+.container{
+    padding-top: 50px;
+}
+hr{
+    width: 300px;
+    border: solid 3px black;
+    
+}
+
+.card{
+    padding-top: 10px;
+   padding: 5px;
+}
