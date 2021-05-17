@@ -1,32 +1,28 @@
-.imagen{
-  
-    width: 100%;
-    height: 400px;
-  
-  }
-.img_fondo{
-    width: 100%;
-    height: 100%;
-
+.imagen {
+  width: 100%;
+  height: 400px;
+}
+.img_fondo {
+  width: 100%;
+  height: 100%;
 }
 
-.artista_titulo{
+.artista_titulo {
   width: 100%;
   text-align: center;
-
 }
-.article-header{
+.article-header {
   text-align: center;
 }
-.especificacion{
+.especificacion {
   margin-top: 50px;
-
 }
-.descripcion{
+.descripcion {
   margin-top: 50px;
-
 }
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -35,22 +31,21 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
+input[type="submit"] {
+  background-color: #4caf50;
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-
 .container {
   border-radius: 5px;
-  
+
   padding: 10px;
 }
 
@@ -61,23 +56,26 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-
 @media screen and (max-width: 600px) {
-  .column, input[type=submit] {
+  .column,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }
 }
 
-.logo-image{
+.logo-image {
   width: 50px;
   height: 38px;
   overflow: hidden;
+}
+
+.has-error {
+  color: #ff0000;
 }

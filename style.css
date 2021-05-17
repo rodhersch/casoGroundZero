@@ -25,9 +25,8 @@
 }
 
 .padre {
-  background: rgb(255, 255, 255);
-  height: 1000px;
-
+  background: rgb(25, 92, 119);
+  height: 970px;
   display: flex;
 
   justify-content: center;
@@ -48,7 +47,7 @@
 .cabeza {
   background-color: white;
   width: 400px;
-  height: 500px;
+  height: 530px;
   position: absolute;
   border-width: 1px;
   border-style: outset;
