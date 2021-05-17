@@ -1,0 +1,5 @@
+select.error,
+textarea.error,
+input.error {
+  color: #ff0000;
+}
