@@ -1,0 +1,18 @@
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-item li {
+  margin: 1rem 2rem 0;
+}
+
+/*transicion color icon-social*/
+.social-item li a {
+  font-size: 1.1rem;
+  transition: color.4s ease;
+  color: #fff;
+}
+.social-item a:hover i {
+  color: blue;
+}
