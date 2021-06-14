@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grupo Cero | Artistas</title>
 
-    <link rel="stylesheet" href="estilos/style2.css" />
+    <link rel="stylesheet" href="{% static '/css/style2.css' %}"/>
 
     <link
       rel="stylesheet"
@@ -24,7 +26,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="estilos/style2.css" />
+    <link rel="stylesheet" href="{% static '/css/style2.css' %}" />
   </head>
   <body>
     <!--Menu navegacion-->
@@ -89,14 +91,14 @@
         <div class="col-sm-4 col-log-2 borde">
           <div><span>José: Escultura, Obras y Exposiciones </span></div>
           <a class="nav-link" href="artista.html">
-            <img class="w-100" src="img/ARTISTAS_1.jpg"
+            <img class="w-100" src="{% static '/images/ARTISTAS_1.jpg' %}"
           /></a>
         </div>
         <br />
         <div class="col-sm-4 col-log-2 borde">
           <div><span>Manuel: Pintor, Obras y Exposiciones </span></div>
           <a class="nav-link" href="artista2.html">
-            <img class="w-100" src="img/ARTISTAS_2.jpg"
+            <img class="w-100" src="{% static '/images/ARTISTAS_2.jpg' %}"
           /></a>
         </div>
         <br />
@@ -105,26 +107,26 @@
             <span>Kumerasaki: Arte Abstracto, Obras y Exposiciones </span>
           </div>
           <a class="nav-link" href="artista3.html">
-            <img class="w-100" src="img/ARTISTAS_3.jpg"
+            <img class="w-100" src="{% static '/images/ARTISTAS_3.jpg' %}"
           /></a>
         </div>
         <br />
         <div class="col-sm-4 col-log-2 borde">
           <div><span>Jhin: Arte Callejero, Obras y Exposiciones </span></div>
           <a class="nav-link" href="artista4.html">
-            <img class="w-100" src="img/ARTISTAS_4.jpg"
+            <img class="w-100" src="{% static '/images/ARTISTAS_4.jpg' %}"
           /></a>
         </div>
         <div class="col-sm-4 col-log-2 borde">
           <div><span>Jhon: Pintor, Obras y Exposiciones </span></div>
           <a class="nav-link" href="artista5.html">
-            <img class="w-100" src="img/ARTISTAS_5.jpg"
+            <img class="w-100" src="{% static '/images/ARTISTAS_5.jpg' %}"
           /></a>
         </div>
         <div class="col-sm-4 col-log-2 borde">
           <div><span>Florencia: Telar, Obras y Exposiciones </span></div>
           <a class="nav-link" href="artista6.html">
-            <img class="w-100" src="img/ARTISTAS_6.jpg"
+            <img class="w-100" src="{% static '/images/ARTISTAS_6.jpg' %}"
           /></a>
         </div>
       </div>

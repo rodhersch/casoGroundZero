@@ -7,12 +7,13 @@ def registrar_usuario(request):
 
 def registrar(request):
     if request.method=="POST":
+        if request.POST["password"] != request.POST["confirm_password"]:
+            return render(request, "registrate.html")
         nombre=request.POST["fullname"]
         apellido=request.POST["lastname"]
         email=request.POST["email"]
         contrasenia=request.POST["password"]
-        comuna=request.POST["comuna"]
-        
+        comuna=request.POST["comuna"]           
         nuevo_usuario=Usuarios(
             nombre=nombre,
             apellido=apellido,
@@ -22,3 +23,4 @@ def registrar(request):
         )
         nuevo_usuario.save()
     return render(request, "registrate.html")
+

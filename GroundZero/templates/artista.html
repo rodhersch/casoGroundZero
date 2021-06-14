@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grupo Cero | José Álvarez</title>
 
-    <link rel="stylesheet" href="estilos/style2.css" />
+    <link rel="stylesheet" href="{% static '/css/style2.css' %}" />
 
     <link
       rel="stylesheet"
@@ -24,7 +26,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="estilos/style2.css" />
+    <link rel="stylesheet" href="{% static '/css/style2.css' %}" />
   </head>
   <body>
     <!--Menu navegacion-->
@@ -89,7 +91,7 @@
       <div class="row">
         <div class="col-sm-12 col-lg-6">
           <br />
-          <img class="w-100" src="img/ARTISTAS_1.jpg" />
+          <img class="w-100" src="{% static '/images/ARTISTAS_1.jpg' %}" />
         </div>
         <div class="col-sm-12 col-lg-6">
           <br />
