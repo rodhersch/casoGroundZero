@@ -56,7 +56,9 @@ ROOT_URLCONF = 'GroundZero.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ 
+            'gestionUsuarios/templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

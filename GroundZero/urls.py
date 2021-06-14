@@ -16,11 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from GroundZero.views import index
+from gestionUsuarios.views import registrar_usuario, registrar
+
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', index)
+    path('index/', index),
+    path('registrar_usuario/', registrar_usuario),
+    path('registrar/', registrar),
+
 ]
 
-urlpatterns += staticfiles_urlpatterns()
+# urlpatterns += staticfiles_urlpatterns()
