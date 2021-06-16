@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grupo Cero | Contacto</title>
 
-    <link rel="stylesheet" href="estilos/style2.css" />
+    <link rel="stylesheet" href="{% static '/css/style2.css' %}" />
 
     <link
       rel="stylesheet"
@@ -24,7 +26,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="estilos/style2.css" />
+    <link rel="stylesheet" href="{% static '/css/style2.css' %}" />
   </head>
   <body>
     <!--Menu navegacion-->
@@ -32,7 +34,7 @@
       class="container navbar navbar-expand-md navbar-dark bg-dark fixed-top"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html"
+        <a class="navbar-brand" href="/index/"
           ><span class="nombre-company"
             ><span class="letter-g">G</span>rupo</span
           >&nbsp;Cero</a
@@ -53,25 +55,27 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mr-4">
-              <a class="nav-link" href="index.html">Inicio </a>
+              <a class="nav-link" href="/index/">Inicio </a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="manualidades.html">Manualidades</a>
+              <a class="nav-link" href="/manualidades/">Manualidades</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="esculturas.html">Esculturas</a>
+              <a class="nav-link" href="/esculturas/">Esculturas</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="pinturas.html">Pinturas</a>
+              <a class="nav-link" href="/pinturas/">Pinturas</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="artistas.html">Artistas</a>
+              <a class="nav-link" href="/artistas/">Artistas</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="nosotros.html">Compañía</a>
+              <a class="nav-link" href="/nosotros/">Compañía</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="sesion.html">Inicia Sesión</a>
+              <a class="nav-link" href="/registrar_usuario"
+                >Registrar Usuario</a
+              >
             </li>
           </ul>
         </div>
@@ -89,7 +93,7 @@
       </div>
       <div class="row">
         <div class="column">
-          <img src="img/imagen1.jpg" style="width: 100%" />
+          <img src="{% static 'images/imagen1.jpg' %}" style="width: 100%" />
         </div>
         <div class="column">
           
@@ -178,6 +182,64 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="container footerNav">
+        <div class="container max-width-c">
+          <div class="row gutter">
+            <div class="col a-12 c-3 gutter">
+              <h4 class="">Acerca de Grupo Cero<i class=""></i></h4>
+              <ul>
+                <li>
+                  <a class="" href="/contacto/" title="Contáctenos"
+                    >Contáctenos</a
+                  >
+                </li>
+
+                <li>
+                  <a class="" href="#" title="Responsabilidad social"
+                    >Responsabilidad social</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col a-12 c-3 gutter">
+              <h4 class="">Soporte <i class=""></i></h4>
+              <ul>
+                <li>
+                  <a class="" href="/usuarios/" title=""
+                    >Comunidad
+                  </a>
+                </li>
+
+                <li>
+                  <a class="t" href="#" title="Contactos ">Contactos </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col a-12 c-3 gutter">
+              <h4 class="">Legal<i class=""></i></h4>
+              <ul>
+                <li>
+                  <a class="" href="#" title="Privacidad">Privacidad</a>
+                </li>
+
+                <li>
+                  <a class="" href="#" title="Política de cookies"
+                    >Política de cookies</a
+                  >
+                </li>
+
+                <li>
+                  <a class="" href="#" title="Aviso legal">Aviso legal</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
