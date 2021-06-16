@@ -20,6 +20,7 @@ from gestionUsuarios.views import registrar_usuario, registrar, registrar_solici
 
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', index),
@@ -39,6 +40,7 @@ urlpatterns = [
     path('pinturas/', pinturas),
     path('usuarios/', usuarios),
     path('registrar_solicitud/', registrar_solicitud),
+    
 
 ]
 
