@@ -66,3 +66,58 @@ def artista6(request):
 
     return HttpResponse(document)
 
+def contacto(request):
+    contacto_page=open("GroundZero/templates/contacto.html", encoding="utf8")
+    plt=Template(contacto_page.read())
+    contacto_page.close()
+    document=plt.render(ctx())
+
+    return HttpResponse(document)
+
+def esculturas(request):
+    esculturas_page=open("GroundZero/templates/esculturas.html", encoding="utf8")
+    plt=Template(esculturas_page.read())
+    esculturas_page.close()
+    document=plt.render(ctx())
+
+    return HttpResponse(document)
+
+def manualidades(request):
+    manualidades_page=open("GroundZero/templates/manualidades.html", encoding="utf8")
+    plt=Template(manualidades_page.read())
+    manualidades_page.close()
+    document=plt.render(ctx())
+
+    return HttpResponse(document)
+
+def nosotros(request):
+    nosotros_page=open("GroundZero/templates/nosotros.html", encoding="utf8")
+    plt=Template(nosotros_page.read())
+    nosotros_page.close()
+    document=plt.render(ctx())
+
+    return HttpResponse(document)
+
+def pinturas(request):
+    pinturas_page=open("GroundZero/templates/pinturas.html", encoding="utf8")
+    plt=Template(pinturas_page.read())
+    pinturas_page.close()
+    document=plt.render(ctx())
+
+    return HttpResponse(document)
+
+def registrate(request):
+    registrate_page=open("GroundZero/templates/registrate.html", encoding="utf8")
+    plt=Template(registrate_page.read())
+    registrate_page.close()
+    document=plt.render(ctx())
+
+    return HttpResponse(document)
+
+def usuarios(request):
+    usuarios_page=open("GroundZero/templates/usuarios.html", encoding="utf8")
+    plt=Template(usuarios_page.read())
+    usuarios_page.close()
+    document=plt.render(ctx())
+
+    return HttpResponse(document)
