@@ -11,9 +11,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-# import os
-import os.path
-Temp_Path = os.path.realpath('.')
+ 
+import os
+DIRNAME = os.path.abspath(os.path.dirname(__file__))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -70,6 +70,10 @@ TEMPLATES = [
         },
     },
 ]
+
+TEMPLATE_DIRS = (
+    os.path.join(DIRNAME, 'gestionUsuarios/templates'),
+)
 
 WSGI_APPLICATION = 'GroundZero.wsgi.application'
 
