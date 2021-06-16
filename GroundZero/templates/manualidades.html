@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grupo Cero | Manualidades</title>
 
-    <link rel="stylesheet" href="estilos/style2.css" />
+    <link rel="stylesheet" href="{% static '/css/style2.css' %}" />
 
     <link
       rel="stylesheet"
@@ -24,7 +26,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="estilos/style2.css" />
+    <link rel="stylesheet" href="{% static '/css/style2.css' %}" />
   </head>
   <body>
     <!--Menu navegacion-->
@@ -32,7 +34,7 @@
       class="container navbar navbar-expand-md navbar-dark bg-dark fixed-top"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html"
+        <a class="navbar-brand" href="/index/"
           ><span class="nombre-company"
             ><span class="letter-g">G</span>rupo</span
           >&nbsp;Cero</a
@@ -53,25 +55,27 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mr-4">
-              <a class="nav-link" href="index.html">Inicio </a>
+              <a class="nav-link" href="/index/">Inicio </a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="manualidades.html">Manualidades</a>
+              <a class="nav-link" href="/manualidades/">Manualidades</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="esculturas.html">Esculturas</a>
+              <a class="nav-link" href="/esculturas/">Esculturas</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="pinturas.html">Pinturas</a>
+              <a class="nav-link" href="/pinturas/">Pinturas</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="artistas.html">Artistas</a>
+              <a class="nav-link" href="/artistas/">Artistas</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="nosotros.html">Compañía</a>
+              <a class="nav-link" href="/nosotros/">Compañía</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="sesion.html">Inicia Sesión</a>
+              <a class="nav-link" href="/registrar_usuario"
+                >Registrar Usuario</a
+              >
             </li>
           </ul>
         </div>
@@ -89,14 +93,14 @@
         <div class="col-sm-4 col-log-2 borde">
           <div><span>Aprende a hacer origami</span></div>
           <a class="nav-link" href="#">
-            <img class="w-100" src="img/origami.jpg"
+            <img class="w-100" src="{% static 'images/origami.jpg' %}"
           /></a>
         </div>
         <br />
         <div class="col-sm-4 col-log-2 borde">
           <div><span>Aprende alfarería</span></div>
           <a class="nav-link" href="#">
-            <img class="w-100" src="img/alfareria.jpg"
+            <img class="w-100" src="{% static 'images/alfareria.jpg' %}"
           /></a>
         </div>
         <br />
@@ -105,26 +109,26 @@
             <span>Aprende orfebrería</span>
           </div>
           <a class="nav-link" href="#">
-            <img class="w-100" src="img/orfebreria.jpg"
+            <img class="w-100" src="{% static 'images/orfebreria.jpg' %}"
           /></a>
         </div>
         <br />
         <div class="col-sm-4 col-log-2 borde">
           <div><span>Aprende a esculpir</span></div>
           <a class="nav-link" href="#">
-            <img class="w-100" src="img/esculpir.jpg"
+            <img class="w-100" src="{% static 'images/esculpir.jpg' %}"
           /></a>
         </div>
         <div class="col-sm-4 col-log-2 borde">
           <div><span>Aprende xilografía</span></div>
           <a class="nav-link" href="#">
-            <img class="w-100" src="img/grabado.jpg"
+            <img class="w-100" src="{% static 'images/grabado.jpg' %}"
           /></a>
         </div>
         <div class="col-sm-4 col-log-2 borde">
           <div><span>Aprende a dibujar</span></div>
           <a class="nav-link" href="#">
-            <img class="w-100" src="img/dibujo.jpg"
+            <img class="w-100" src="{% static 'images/dibujo.jpg' %}"
           /></a>
         </div>
       </div>
@@ -139,16 +143,13 @@
               <h4 class="">Acerca de Grupo Cero<i class=""></i></h4>
               <ul>
                 <li>
-                  <a class="" href="contacto.html" title="Contáctenos"
+                  <a class="" href="/contacto/" title="Contáctenos"
                     >Contáctenos</a
                   >
                 </li>
 
                 <li>
-                  <a
-                    class=""
-                    href="contacto.html"
-                    title="Responsabilidad social"
+                  <a class="" href="#" title="Responsabilidad social"
                     >Responsabilidad social</a
                   >
                 </li>
@@ -159,15 +160,13 @@
               <h4 class="">Soporte <i class=""></i></h4>
               <ul>
                 <li>
-                  <a class="" href="usuarios.html" title="" target="_blank"
+                  <a class="" href="/usuarios/" title="" 
                     >Comunidad
                   </a>
                 </li>
 
                 <li>
-                  <a class="t" href="contacto.html" title="Contactos "
-                    >Contactos
-                  </a>
+                  <a class="t" href="#" title="Contactos ">Contactos </a>
                 </li>
               </ul>
             </div>
@@ -176,21 +175,17 @@
               <h4 class="">Legal<i class=""></i></h4>
               <ul>
                 <li>
-                  <a class="" href="contacto.html" title="Privacidad"
-                    >Privacidad</a
-                  >
+                  <a class="" href="#" title="Privacidad">Privacidad</a>
                 </li>
 
                 <li>
-                  <a class="" href="contacto.html" title="Política de cookies"
+                  <a class="" href="#" title="Política de cookies"
                     >Política de cookies</a
                   >
                 </li>
 
                 <li>
-                  <a class="" href="contacto.html" title="Aviso legal"
-                    >Aviso legal</a
-                  >
+                  <a class="" href="#" title="Aviso legal">Aviso legal</a>
                 </li>
               </ul>
             </div>

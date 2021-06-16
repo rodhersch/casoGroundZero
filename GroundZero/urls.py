@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from GroundZero.views import index, artistas, artista, artista2, artista3, artista4, artista5, artista6
+from GroundZero.views import index, artistas, artista, artista2, artista3, artista4, artista5, artista6, contacto, esculturas, manualidades, nosotros, pinturas, usuarios
 from gestionUsuarios.views import registrar_usuario, registrar
 
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
@@ -32,6 +32,12 @@ urlpatterns = [
     path('artista4/', artista4),
     path('artista5/', artista5),
     path('artista6/', artista6),
+    path('contacto/', contacto),
+    path('esculturas/', esculturas),
+    path('manualidades/', manualidades),
+    path('nosotros/', nosotros),
+    path('pinturas/', pinturas),
+    path('usuarios/', usuarios),
 
 ]
 
