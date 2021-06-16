@@ -104,8 +104,8 @@
                  <div class="panel-heading">
                     <h4 class="panel-title">Por favor, rellena este formulario</h4>
                  </div>
-                 <div class="panel-body">           
-                    <form class="form-horizontal" id="signupForm">
+                 <form action="/registrar_solicitud/" method="POST">{% csrf_token %}
+                  <div class="panel-body">             
                     <br />
                     
                     <div class="form-group">
@@ -173,7 +173,8 @@
                             <input type="submit" class="btn btn-primary" value="Enviar" />
                         </div>
                     </div>
-        
+                  </div>
+                  </form>
                 </form> 
                  </div>
               </div>
