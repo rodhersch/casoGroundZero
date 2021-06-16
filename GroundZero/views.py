@@ -121,3 +121,11 @@ def usuarios(request):
     document=plt.render(ctx())
 
     return HttpResponse(document)
+
+def mostrar(request):
+    mostrar_page=open("GroundZero/templates/mostrar.html", encoding="utf8")
+    plt=Template(mostrar_page.read())
+    mostrar_page.close()
+    document=plt.render(ctx())
+
+    return HttpResponse(document)

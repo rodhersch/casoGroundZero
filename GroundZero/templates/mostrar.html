@@ -6,9 +6,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grupo Cero | Usuarios</title>
+    <title>Grupo Cero | Artistas</title>
 
-    <link rel="stylesheet" href="comunidad.css" />
+    <link rel="stylesheet" href="{% static '/css/style2.css' %}"/>
 
     <link
       rel="stylesheet"
@@ -26,7 +26,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="estilos/style2.css" />
+    <link rel="stylesheet" href="{% static '/css/style2.css' %}" />
   </head>
   <body>
     <!--Menu navegacion-->
@@ -81,26 +81,37 @@
         </div>
       </div>
     </nav>
-    <br /><br />
+    <br />
+    <br />
+    <br />
+    <br />
 
-    <!-- bottom  para ver la informacion de los artisatas con sus imagenes-->
-
-    <div class="container my-5 text-center">
-      <h2 class="display-4">
-        Usuarios que han utilizado <br />
-        nuestros servicios
-      </h2>
-      <hr />
-
-      <button class="btn btn-primary" onclick="traer()">Obtener<br /></button>
-
-      <div class="mt-5" id="contenido"></div>
+                <div class="container">
+                <table class="table table-striped table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Apellido</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Comuna</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for c in usuarios %}
+                <tr>
+                  <td>{{c.nombre}}</td>
+                  <td>{{c.apellido}}</td>
+                  <td>{{c.email}}</td>
+                  <td>{{c.comuna}}</td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+        </div>
+      </div>
     </div>
-
-    <br /><br />
-
-    <!--Footer-->
-
+  </body>
+  
     <footer>
       <div class="container footerNav">
         <div class="container max-width-c">
@@ -109,10 +120,7 @@
               <h4 class="">Acerca de Grupo Cero<i class=""></i></h4>
               <ul>
                 <li>
-                  <a
-                    class=""
-                    href="/registrar_solicitud_contacto/"
-                    title="Contáctenos"
+                  <a class="" href="/registrar_solicitud_contacto/" title="Contáctenos"
                     >Contáctenos</a
                   >
                 </li>
@@ -129,7 +137,9 @@
               <h4 class="">Soporte <i class=""></i></h4>
               <ul>
                 <li>
-                  <a class="" href="/usuarios/" title="">Comunidad </a>
+                  <a class="" href="/usuarios/" title="" 
+                    >Comunidad
+                  </a>
                 </li>
 
                 <li>
@@ -161,22 +171,6 @@
       </div>
     </footer>
 
-    <script>
-      var contenido = document.querySelector("#contenido");
-      function traer() {
-        fetch("https://randomuser.me/api/")
-          .then((res) => res.json())
-          .then((data) => {
-            console.log(data.results["0"]);
-            contenido.innerHTML = ` <img src="${data.results["0"].picture.large}" width="100px" class="img-fluid rounded-circle">
-        <p>Nombre: ${data.results["0"].name.last}</p>
-        <p>Correo electrónico: ${data.results["0"].email}</p>
-        <p>Teléfono: ${data.results["0"].phone}</p>
-        `;
-          });
-      }
-    </script>
-
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -194,3 +188,4 @@
     ></script>
   </body>
 </html>
+

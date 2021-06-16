@@ -15,14 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from GroundZero.views import index, artistas, artista, artista2, artista3, artista4, artista5, artista6, esculturas, manualidades, nosotros, pinturas, usuarios
+from GroundZero.views import index, artistas, artista, artista2, artista3, artista4, artista5, artista6, esculturas, manualidades, nosotros, pinturas, usuarios, mostrar
 from gestionUsuarios.views import registrar_usuario, registrar, registrar_solicitud_contacto, registrar_solicitud
+from django.conf.urls import include,url
+from django.conf import settings
+from django.contrib.staticfiles.views import serve
 
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index),
     path('index/', index),
     path('registrar_usuario/', registrar_usuario),
     path('registrar/', registrar),
@@ -40,8 +43,9 @@ urlpatterns = [
     path('pinturas/', pinturas),
     path('usuarios/', usuarios),
     path('registrar_solicitud/', registrar_solicitud),
+    path('mostrar/', mostrar),
     
-
 ]
 
-# urlpatterns += staticfiles_urlpatterns()
+
+#urlpatterns += staticfiles_urlpatterns()

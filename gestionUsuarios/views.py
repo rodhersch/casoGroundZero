@@ -25,6 +25,16 @@ def registrar(request):
         nuevo_usuario.save()
     return render(request, "registrate.html")
 
+def mostrar_usuarios(request):
+    usuarios = Usuarios.objects.all()
+    contexto = {
+        "nombre" : usuarios.nombre,
+        "apellido" : usuarios.apellido,
+        "email" : usuarios.email,
+        "comuna" : usuarios.comuna
+    }
+    return render(request, "mostrar.html", contexto)
+
 def registrar_solicitud_contacto(request):
     return render(request, "contacto.html")
 
